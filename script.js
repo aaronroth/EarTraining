@@ -6,7 +6,7 @@ var practiceCount = 1;
 $(document).ready(function() {
   make_practice_array();
   practice();
-  $('#check').live('click', function() {
+  $('#check-button').live('click', function() {
     check_answer();
   });
 });
@@ -31,10 +31,19 @@ function check_answer() {
     var chordPlayed = source.split('/').pop().split('.')[0];
     var answerGiven = $(answers.get(i)).val();
     
-    if (chordPlayed == answerGiven) {
+    if (chordPlayed == answerGiven ||
+        chordPlayed.toLowerCase() == answerGiven) {
       $(grades.get(i)).text('correct');
+      $(grades.get(i)).css('color', '#3fb126');
+      $(grades.get(i)).css('font-weight', 'normal');
+    } else if (answerGiven == '') {
+      $(grades.get(i)).text('incomplete');
+      $(grades.get(i)).css('color', '#fe2020');
+      $(grades.get(i)).css('font-weight', 'bold');
     } else {
       $(grades.get(i)).text('incorrect');
+      $(grades.get(i)).css('color', '#fe2020');
+      $(grades.get(i)).css('font-weight', 'bold');
     }
   }
 }
@@ -67,12 +76,12 @@ function practice() {
                   '<input class="answers" type="text" />' +
                   '<div class="grades"></div>' +
                '</div>';  
-    $('body').append(html);
+    $('#main-container').append(html);
     
     var timeoutID = window.setTimeout(practice, decisionTime * 1000);
   } else {
-    var html = '<div id="check">check</div>';
+    var html = '<div id="check-button">check</div>';
     
-    $('body').append(html);
+    $('#main-container').append(html);
   }
 }
