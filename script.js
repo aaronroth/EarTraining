@@ -1,5 +1,5 @@
 var chordArray = ['A', 'E', 'D'];
-var decisionTime = 8;
+var decisionTime = 1;
 var practiceArray = [];
 var practiceCount = 1;
 
