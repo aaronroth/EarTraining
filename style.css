@@ -20,6 +20,14 @@ body {
   margin: 0px;
 }
 
+.checkbox {
+  border-radius: 5px;
+  display: block;
+  float: left;
+  height: 18px;
+  padding: 2px 3px 3px 2px;
+}
+
 #check-button {
   background: #f2f2f2;
   border: 1px solid #dcdcdc;
@@ -35,6 +43,24 @@ body {
   box-shadow: 1px 1px 1px 1px #eeeeee;
 }
 
+#chords {
+  margin: 10px 0px 0px 0px;
+  width: 240px;
+}
+
+.chord-type {
+  padding: 0px 0px 0px 1px;
+}
+
+#chord-box {
+  float: left;
+  width: 240px;
+}
+
+.chord-type {
+  vertical-align: -2px;
+}
+
 .container {
   background: #d9d9d9;
   border-radius: 5px;
@@ -43,6 +69,16 @@ body {
   margin: 10px auto 10px auto;
   padding: 10px;
   width: 442px;
+}
+
+#duration {
+  margin: 10px 0px 0px 0px;
+  width: 240px;
+}
+
+#duration-box {
+  float: left;
+  width: 240px;
 }
 
 .grades {
@@ -55,8 +91,36 @@ body {
   width: 86px;
 }
 
+h1 {
+  margin: 10px;
+  width: 125px;
+}
+
+h2 {
+  margin: 0px;
+}
+
 #main-container {
+  height: 500px;
   margin: auto;
-  padding: 0px;
-  width: 462px;
+  padding: 120px 0px 0px 0px;
+  width: 780px;
+}
+
+.prompts {
+  color: #444444;
+  font-size: 11pt;
+  font-style: italic;
+  margin: 2px 0px 0px 0px;
+}
+
+#repetitions {
+  margin: 10px 0px 0px 0px;
+  width: 240px;
+}
+
+#repetition-box {
+  float: left;
+  margin: 0px 30px 0px 30px;
+  width: 240px;
 }

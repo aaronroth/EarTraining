@@ -4,10 +4,18 @@ var practiceArray = [];
 var practiceCount = 1;
 
 $(document).ready(function() {
+  $('.checkbox').live('mouseover', function() {
+    $(this).css('background', '#dddddd');
+  });
+  
+  $('.checkbox').live('mouseout', function() {
+    $(this).css('background', '#ffffff');
+  });
+  
   make_practice_array();
-  practice();
+  // practice();
   $('#check-button').live('click', function() {
-    check_answer();
+    check_answers();
   });
 });
 
@@ -21,7 +29,7 @@ Array.prototype.shuffle = function() {
 };
 
 // Checks answer.
-function check_answer() {
+function check_answers() {
   var containers = $('.container');
   var answers = $('.answers');
   var grades = $('.grades');
@@ -67,7 +75,7 @@ function make_practice_array() {
 function practice() {
   if (practiceArray.length > 0) {
     var chord = practiceArray.pop();
-    var sourceURL = 'http://findaaron.nfshost.com/EarTraining/chords/' + 
+    var sourceURL = 'http://findaaron.nfshost.com/EarTraining/' + 
                      chord + '.mp3';
     
     var html = '<div class="container">' +

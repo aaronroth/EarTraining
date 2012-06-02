@@ -1,11 +1,71 @@
 <html>
 	<head>
+		<title>Ear Training</title>
 		<link href="style.css" type="text/css" rel="stylesheet" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script src="script.js" type="text/javascript"></script>
 	</head>
 	
 	<body>
-		<div id="main-container"></div>
+		<h1>Ear Training</h1>
+		
+		<div id="main-container">
+			<div id="chord-box">
+				<div id="chord-box-title">
+					<h2>chords</h2>
+					<p class="prompts">what chords to practice?</p>
+				</div>
+				
+				<div id="chords">
+					<label><span class="checkbox"><input type="checkbox" value="A" /><span class="chord-type">A</span></span></label>
+					<label><span class="checkbox"><input type="checkbox" value="D" /><span class="chord-type">D</span></span></label>
+					<label><span class="checkbox"><input type="checkbox" value="E" /><span class="chord-type">E</span></span></label>
+				</div>
+			</div>
+			
+			<div id="repetition-box">
+				<div id="repetition-box-title">
+					<h2>repetitions</h2>
+					<p class="prompts">how many times to practice each?</p>
+				</div>
+				
+				<div id="repetitions">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select>
+				</div>
+			</div>
+			
+			<div id="duration-box">
+				<div id="duration-box-title">
+					<h2>duration</h2>
+					<p class="prompts">how many seconds to identify each?</p>
+				</div>
+				
+				<div id="duration">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
