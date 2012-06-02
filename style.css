@@ -5,7 +5,7 @@
   float: left;
   height: 25px;
   margin: 0px 10px 0px 10px;
-  padding: 5px 0px 5px 7px;
+  padding: 5px 0px 5px 5px;
   width: 24px;
 }
 
@@ -35,11 +35,12 @@ body {
   color: #444444;
   cursor: pointer;
   float: right;
+  margin: 20px 5px 50px 0px;
   padding: 5px;
 }
 
 #check-button:hover {
-  border-color: #d3d3d3;
+  border-color: #c2c2c2;
   box-shadow: 1px 1px 1px 1px #eeeeee;
 }
 
@@ -84,7 +85,9 @@ body {
 .grades {
   background: #f3f3f3;
   border-radius: 5px;
+  color: #c8c8c8;
   float: left;
+  font-style: italic;
   height: 15px;
   padding: 5px;
   text-align: center;
@@ -123,4 +126,36 @@ h2 {
   float: left;
   margin: 0px 30px 0px 30px;
   width: 240px;
+}
+
+#reset-button {
+  background: #f2f2f2;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  color: #444444;
+  cursor: pointer;
+  float: right;
+  margin: 20px 0px 50px 0px;
+  padding: 5px;
+}
+
+#reset-button:hover {
+  border-color: #c2c2c2;
+  box-shadow: 1px 1px 1px 1px #eeeeee;
+}
+
+#start-button {
+  background: #f2f2f2;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  color: #444444;
+  cursor: pointer;
+  float: right;
+  margin: 150px 0px 0px 0px;
+  padding: 5px;
+}
+
+#start-button:hover {
+  border-color: #c2c2c2;
+  box-shadow: 1px 1px 1px 1px #eeeeee;
 }
