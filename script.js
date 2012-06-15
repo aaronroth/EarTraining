@@ -94,6 +94,7 @@ function check_answers() {
       $(grades.get(i)).css('color', '#fe2020');
       $(grades.get(i)).css('font-weight', 'bold');
       $(grades.get(i)).css('font-style', 'normal');
+      $(answers.get(i)).val('');
     }
   }
 }
@@ -132,7 +133,7 @@ function make_practice_array() {
 function practice() {
   if (practiceArray.length > 0) {
     var chord = practiceArray.pop();
-    var sourceURL = 'http://findaaron.nfshost.com/EarTraining/' + 
+    var sourceURL = 'http://findaaron.nfshost.com/EarTraining/chords/' + 
                      chord + '.mp3';
     
     var html = '<div class="container">' +
